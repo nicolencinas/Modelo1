@@ -51,15 +51,21 @@ public class Programa1 {
 		{
 			public void keyPressed(KeyEvent e)
 			{
-				int key=e.getKeyCode();
 				
-				if (key==KeyEvent.VK_KP_UP)
-					System.out.print("Arriba");
-			  textArea.setText("Presiono arriba");
+				if (38==e.getKeyCode())
+				{
+					textArea.setText("Presiono arriba");
+				}
+				
+				else if (39==e.getKeyCode())
+					textArea.setText("");
+				
 				
 					
 			}
 			
+			
+		
 			
 		});
 		
